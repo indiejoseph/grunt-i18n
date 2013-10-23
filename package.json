@@ -20,7 +20,7 @@
             "url": "https://github.com/gruntjs/grunt-contrib-copy/blob/master/LICENSE-MIT"
         }
     ],
-    "main": "tasks/i18n.js",
+    "main": "Gruntfile.coffee",
     "engines": {
         "node": ">= 0.8.0"
     },
