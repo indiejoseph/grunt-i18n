@@ -1,4 +1,7 @@
 {
+    "options": {
+        "outputFolder": "en"
+    },
     "message": "Hello world!",
     "nested": {
         "msg": "and hello to you"

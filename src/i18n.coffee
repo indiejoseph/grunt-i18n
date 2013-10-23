@@ -18,7 +18,7 @@ module.exports = (grunt) ->
     template = grunt.file.read templatePath
     local = grunt.file.readJSON localePath
     localizedTemplate = grunt.template.process template, {data: local}
-    outputFolder = path.basename localePath, path.extname localePath
+    outputFolder = if local.options?.outputFolder? then local.options.outputFolder else path.basename localePath, path.extname localePath
     output = generateOutputPath outputFolder, templatePath, options
     grunt.file.write output, localizedTemplate
 

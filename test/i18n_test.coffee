@@ -5,7 +5,7 @@ exports.i18n =
     test.expect 2
 
     expected = grunt.file.read 'test/expected/en_US/test.tpl.html'
-    actual = grunt.file.read 'tmp/en_US/test.tpl.html'
+    actual = grunt.file.read 'tmp/en/test.tpl.html'
     test.equal expected, actual, 'should translate a template to english'
 
     expected = grunt.file.read 'test/expected/pl_PL/test.tpl.html'
